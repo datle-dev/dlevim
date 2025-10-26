@@ -1,0 +1,10 @@
+require("config.lazy")
+require("config.keymaps")
+require("config.options")
+require("config.autocmd")
+
+vim.lsp.enable({
+  "lua_ls",
+  "pyright",
+  "marksman",
+})

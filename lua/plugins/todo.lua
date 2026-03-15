@@ -1,21 +1,11 @@
-return {
-  --FIX: fix
-  --TODO: todo
-  --HACK: hack
-  --WARN: warn
-  --PERF: perf
-  --NOTE: note
-  --TEST: test
-  {
-    "folke/todo-comments.nvim",
-    lazy = false,
-    dependencies = { "nvim-lua/plenary.nvim", lazy = true },
-    opts = {},
-    keys = {
-      { "]t", function() require("todo-comments").jump_next() end, desc = "next todo comment" },
-      { "[t", function() require("todo-comments").jump_prev() end, desc = "previous todo comment" },
-      { "<leader>xt", "<cmd> Trouble todo toggle<CR>", desc = "todo (Trouble)" },
-      { "<leader>xl", "<cmd>TodoLocList<CR>", desc = "todo location list" },
-    },
-  },
-}
+vim.pack.add({ "https://github.com/folke/todo-comments.nvim" })
+
+require("todo-comments").setup()
+
+--FIX: fix
+--TODO: todo
+--HACK: hack
+--WARN: warn
+--PERF: perf
+--NOTE: note
+--TEST: test

@@ -1,166 +1,67 @@
-return {
-  {
-    "echasnovski/mini.ai",
-    version = false,
-    lazy = false,
-    opts = {},
-  },
-  {
-    "echasnovski/mini.bracketed",
-    version = false,
-    lazy = false,
-    opts = {},
-  },
-  {
-    "echasnovski/mini.clue",
-    version = false,
-    lazy = false,
-    config = function()
-      local miniclue = require("mini.clue")
-      miniclue.setup({
-        clues = {
-          { mode = "n", keys = "<leader>f", desc = "+fzf-lua" },
-          { mode = "n", keys = "<leader>g", desc = "+grapple" },
-          { mode = "n", keys = "<leader>p", desc = "+pick" },
-          { mode = "n", keys = "<leader>t", desc = "+trouble" },
-          miniclue.gen_clues.g(),
-          miniclue.gen_clues.marks(),
-          miniclue.gen_clues.windows(),
-        },
-        triggers = {
-          { mode = "n", keys = "<leader>" },
-          { mode = "n", keys = "g" },
-          { mode = "n", keys = "'" },
-          { mode = "n", keys = "<C-w>" },
-        },
-        window = {
-          delay = 0,
-        },
-      })
-    end,
-  },
-  {
-    "echasnovski/mini.comment",
-    version = false,
-    lazy = false,
-    opts = {},
-  },
-  {
-    "echasnovski/mini.cursorword",
-    version = false,
-    lazy = false,
-    opts = {},
-  },
-  {
-    "echasnovski/mini.diff",
-    version = false,
-    lazy = false,
-    opts = {},
-  },
-  {
-    "echasnovski/mini.extra",
-    version = false,
-    lazy = false,
-    opts = {},
-  },
-  {
-    "echasnovski/mini.files",
-    version = false,
-    lazy = false,
-    opts = {
-      options = {
-        use_as_default_explorer = true,
-      },
-    },
-    keys = {
-      {
-        "<leader>e",
-        function()
-          require("mini.files").open(vim.api.nvim_buf_get_name(0), true)
-        end,
-        desc = "explorer",
-      },
-    },
-    config = function(_, opts)
-      require("mini.files").setup(opts)
-    end,
-  },
-  {
-    "echasnovski/mini.icons",
-    version = false,
-    lazy = false,
-    opts = {},
-  },
-  {
-    "echasnovski/mini.pairs",
-    version = false,
-    lazy = false,
-    opts = {
-      skip_ts = { "string", "comment" },
-    },
-    config = function(_, opts)
-      require("mini.pairs").setup(opts)
-    end,
-  },
-  {
-    "echasnovski/mini.pick",
-    version = false,
-    opts = {},
-    keys = {
-      { "<leader>pf", "<cmd>Pick files<CR>", desc = "pick files" },
-      { "<leader>pg", "<cmd>Pick grep<CR>", desc = "pick grep" },
-      { "<leader>pb", "<cmd>Pick buffers<CR>", desc = "pick buffers" },
-      { "<leader>ph", "<cmd>Pick help<CR>", desc = "pick help" },
-    },
-  },
-  {
-    "echasnovski/mini.sessions",
-    version = false,
-    opts = {},
-  },
-  {
-    "echasnovski/mini.snippets",
-    version = false,
-    lazy = false,
-    config = function()
-      local gen_loader = require("mini.snippets").gen_loader
-      require("mini.snippets").setup({
-        snippets = {
-          -- Load custom file with global snippets first (adjust for Windows)
-          gen_loader.from_file("~/.config/nvim/snippets/global.json"),
+vim.pack.add({
+  "https://github.com/echasnovski/mini.ai",
+  "https://github.com/echasnovski/mini.clue",
+  "https://github.com/echasnovski/mini.comment",
+  "https://github.com/echasnovski/mini.completion",
+  "https://github.com/echasnovski/mini.cursorword",
+  "https://github.com/echasnovski/mini.diff",
+  "https://github.com/echasnovski/mini.extra",
+  "https://github.com/echasnovski/mini.files",
+  "https://github.com/echasnovski/mini.icons",
+  "https://github.com/echasnovski/mini.pairs",
+  "https://github.com/echasnovski/mini.pick",
+  "https://github.com/echasnovski/mini.statusline",
+  "https://github.com/echasnovski/mini.surround",
+})
 
-          -- Load snippets based on current language by reading files from
-          -- "snippets/" subdirectories from 'runtimepath' directories.
-          gen_loader.from_lang(),
-        },
-      })
-    end,
+require("mini.ai").setup()
+require("mini.clue").setup({
+  clues = {
+    { mode = "n", keys = "<leader>f", desc = "+fzf-lua" },
+    { mode = "n", keys = "<leader>g", desc = "+grapple" },
+    { mode = "n", keys = "<leader>l", desc = "+flash" },
+    { mode = "n", keys = "<leader>p", desc = "+pick" },
+    { mode = "n", keys = "<leader>s", desc = "+snacks" },
+    { mode = "n", keys = "<leader>t", desc = "+trouble" },
+    require("mini.clue").gen_clues.square_brackets(),
+    require("mini.clue").gen_clues.builtin_completion(),
+    require("mini.clue").gen_clues.g(),
+    require("mini.clue").gen_clues.marks(),
+    require("mini.clue").gen_clues.registers(),
+    require("mini.clue").gen_clues.windows(),
+    require("mini.clue").gen_clues.z(),
   },
-  {
-    "echasnovski/mini.splitjoin",
-    version = false,
-    opts = {},
+  triggers = {
+    { mode = { "n", "x" }, keys = "<leader>" },
+    { mode = "n", keys = "[" },
+    { mode = "n", keys = "]" },
+    { mode = "i", keys = "<C-x>" },
+    { mode = { "n", "x" }, keys = "g" },
+    { mode = { "n", "x" }, keys = "'" },
+    { mode = { "n", "x" }, keys = "`" },
+    { mode = { "n", "x" }, keys = '"' },
+    { mode = { "i", "c" }, keys = "<C-r>" },
+    { mode = "n", keys = "<C-w>" },
+    { mode = { "n", "x" }, keys = "z" },
   },
-  {
-    "echasnovski/mini.starter",
-    version = false,
-    opts = {
-      header = "neovim",
-    },
-    config = function(_, opts)
-      require("mini.starter").setup(opts)
-    end,
+  window = {
+    delay = 0,
   },
-  {
-    "echasnovski/mini.statusline",
-    version = false,
-    event = "VeryLazy",
-    opts = {},
+})
+require("mini.comment").setup()
+require("mini.completion").setup({
+  window = {
+    info = { height = 25, width = 80, border = "single" },
+    signature = { height = 25, width = 80, border = "single" },
+    completions = { border = "single" },
   },
-  {
-    "echasnovski/mini.surround",
-    version = false,
-    lazy = false,
-    opts = {},
-  },
-}
+})
+require("mini.cursorword").setup()
+require("mini.diff").setup()
+require("mini.extra").setup()
+require("mini.files").setup()
+require("mini.icons").setup()
+require("mini.pairs").setup()
+require("mini.pick").setup()
+require("mini.statusline").setup()
+require("mini.surround").setup()

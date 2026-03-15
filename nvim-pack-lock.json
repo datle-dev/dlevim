@@ -1,0 +1,153 @@
+{
+  "plugins": {
+    "blink.cmp": {
+      "rev": "cb8840b3a669e2af24e922ea58b44ccc0b8916ea",
+      "src": "https://github.com/saghen/blink.cmp",
+      "version": ">=0.0.0"
+    },
+    "conform.nvim": {
+      "rev": "086a40dc7ed8242c03be9f47fbcee68699cc2395",
+      "src": "https://github.com/stevearc/conform.nvim"
+    },
+    "everforest-nvim": {
+      "rev": "323e7633034a8068636a11597cec03bca5465c50",
+      "src": "https://github.com/neanias/everforest-nvim"
+    },
+    "evergarden": {
+      "rev": "4f1345b359daa8f1f91bd562a60658994b478e11",
+      "src": "https://codeberg.org/evergarden/nvim.git"
+    },
+    "flash.nvim": {
+      "rev": "fcea7ff883235d9024dc41e638f164a450c14ca2",
+      "src": "https://github.com/folke/flash.nvim"
+    },
+    "fzf-lua": {
+      "rev": "65c848961e66de995052ead60970fbde101ff18f",
+      "src": "https://github.com/ibhagwan/fzf-lua"
+    },
+    "github-nvim-theme": {
+      "rev": "c106c9472154d6b2c74b74565616b877ae8ed31d",
+      "src": "https://github.com/projekt0n/github-nvim-theme"
+    },
+    "grapple.nvim": {
+      "rev": "b41ddfc1c39f87f3d1799b99c2f0f1daa524c5f7",
+      "src": "https://github.com/cbochs/grapple.nvim"
+    },
+    "gruvbox-material": {
+      "rev": "790afe9dd085aa04eccd1da3626c5fa05c620e53",
+      "src": "https://github.com/sainnhe/gruvbox-material"
+    },
+    "kanagawa.nvim": {
+      "rev": "aef7f5cec0a40dbe7f3304214850c472e2264b10",
+      "src": "https://github.com/rebelot/kanagawa.nvim"
+    },
+    "leap.nvim": {
+      "rev": "774c452da3521d4434f912b6ca6dd97318aca4b0",
+      "src": "https://codeberg.org/andyg/leap.nvim"
+    },
+    "mason.nvim": {
+      "rev": "44d1e90e1f66e077268191e3ee9d2ac97cc18e65",
+      "src": "https://github.com/mason-org/mason.nvim"
+    },
+    "melange-nvim": {
+      "rev": "ce42f6b629beeaa00591ba73a77d3eeac4cf28ce",
+      "src": "https://github.com/savq/melange-nvim"
+    },
+    "miasma.nvim": {
+      "rev": "627f2e1cac91de0d1d4dd7472b506a30f41b2b7d",
+      "src": "https://github.com/xero/miasma.nvim"
+    },
+    "mini.ai": {
+      "rev": "4b0a6207341d895b6cfe9bcb1e4d3e8607bfe4f4",
+      "src": "https://github.com/echasnovski/mini.ai"
+    },
+    "mini.clue": {
+      "rev": "8b748316c5a5ab24ab18ccd5db9d62fe86fdddee",
+      "src": "https://github.com/echasnovski/mini.clue"
+    },
+    "mini.comment": {
+      "rev": "597d32ed2c9fbfbf9a250bec7c6b9035f71214f5",
+      "src": "https://github.com/echasnovski/mini.comment"
+    },
+    "mini.completion": {
+      "rev": "4f94cafdeef02bf3ef9997cd6862658801caa22c",
+      "src": "https://github.com/echasnovski/mini.completion"
+    },
+    "mini.cursorword": {
+      "rev": "8dcf45bc820f3c5f778960ba55206938246b70b7",
+      "src": "https://github.com/echasnovski/mini.cursorword"
+    },
+    "mini.diff": {
+      "rev": "ff3cd5e76e812fa18bde0f8126d6f3bb62008c79",
+      "src": "https://github.com/echasnovski/mini.diff"
+    },
+    "mini.extra": {
+      "rev": "0ccc67319240cf8712f5f614db50c262eccd9db3",
+      "src": "https://github.com/echasnovski/mini.extra"
+    },
+    "mini.files": {
+      "rev": "57eb96a828f80efb8095a611e3aafcfa43548f8b",
+      "src": "https://github.com/echasnovski/mini.files"
+    },
+    "mini.icons": {
+      "rev": "5b9076dae1bfbe47ba4a14bc8b967cde0ab5d77e",
+      "src": "https://github.com/echasnovski/mini.icons"
+    },
+    "mini.pairs": {
+      "rev": "b7fde3719340946feb75017ef9d75edebdeb0566",
+      "src": "https://github.com/echasnovski/mini.pairs"
+    },
+    "mini.pick": {
+      "rev": "8521fe21df86e08d9e4b3c3f3a7d50e47954e1af",
+      "src": "https://github.com/echasnovski/mini.pick"
+    },
+    "mini.statusline": {
+      "rev": "8c3829d4ef02b693f68e43fc131b433f11049b2b",
+      "src": "https://github.com/echasnovski/mini.statusline"
+    },
+    "mini.surround": {
+      "rev": "d205d1741d1fcc1f3117b4e839bf00f74ad72fa2",
+      "src": "https://github.com/echasnovski/mini.surround"
+    },
+    "neovim": {
+      "rev": "cf2a288696b03d0934da713d66c6d71557b5c997",
+      "src": "https://github.com/rose-pine/neovim"
+    },
+    "nightfox.nvim": {
+      "rev": "ba47d4b4c5ec308718641ba7402c143836f35aa9",
+      "src": "https://github.com/EdenEast/nightfox.nvim"
+    },
+    "nvim": {
+      "rev": "384f304c8b04664c9e0091fbfb3923c5f97c1bcf",
+      "src": "https://github.com/catppuccin/nvim"
+    },
+    "nvim-treesitter": {
+      "rev": "eb1f8e80cb28eb7892f347609e0bdc5eb574b945",
+      "src": "https://github.com/nvim-treesitter/nvim-treesitter"
+    },
+    "onedark.nvim": {
+      "rev": "213c23ae45a04797572242568d5d51937181792d",
+      "src": "https://github.com/navarasu/onedark.nvim"
+    },
+    "onedarkpro.nvim": {
+      "rev": "dab7b623d48b50330c43234958c0ba2de9b501d5",
+      "src": "https://github.com/olimorris/onedarkpro.nvim"
+    },
+    "snacks.nvim": {
+      "rev": "a049339328e2599ad6e85a69fa034ac501e921b2",
+      "src": "https://github.com/folke/snacks.nvim"
+    },
+    "todo-comments.nvim": {
+      "rev": "31e3c38ce9b29781e4422fc0322eb0a21f4e8668",
+      "src": "https://github.com/folke/todo-comments.nvim"
+    },
+    "tokyonight.nvim": {
+      "rev": "5da1b76e64daf4c5d410f06bcb6b9cb640da7dfd",
+      "src": "https://github.com/folke/tokyonight.nvim"
+    },
+    "trouble.nvim": {
+      "rev": "bd67efe408d4816e25e8491cc5ad4088e708a69a",
+      "src": "https://github.com/folke/trouble.nvim"
+    }
+  }
+}

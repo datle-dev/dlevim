@@ -65,6 +65,9 @@ map.n("<leader>ph", "<cmd>Pick help<CR>", "pick help")
 map.n("<leader>st", function()
   require("snacks").terminal.toggle()
 end, "snacks terminal")
+map.n("<leader>sl", function()
+  require("snacks").lazygit()
+end, "snacks lazygit")
 
 -- trouble
 map.n("<leader>tb", "<cmd>Trouble diagnostics toggle filter.buf=0<CR>", "trouble buffer")

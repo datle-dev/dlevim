@@ -1,5 +1,5 @@
 vim.pack.add({
-  "https://github.com/catppuccin/nvim",
+  { src = "https://github.com/catppuccin/nvim", name = "catppuccin" },
   "https://github.com/rebelot/kanagawa.nvim",
   "https://github.com/folke/tokyonight.nvim",
   "https://github.com/sainnhe/gruvbox-material",

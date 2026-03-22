@@ -20,6 +20,6 @@ require("plugins.trouble")
 vim.lsp.enable({
   "lua_ls",
   "marksman",
-  "pyright",
+  "basedpyright",
   "rust_analyzer",
 })

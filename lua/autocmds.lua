@@ -30,3 +30,19 @@ vim.api.nvim_create_autocmd("ColorScheme", {
     })
   end,
 })
+
+-- -- override colortheme and ensure mini cursorword underlines word under cursor
+-- vim.api.nvim_create_autocmd("ColorScheme", {
+--   group = augroup("minicursorword_fix"),
+--   callback = function()
+--     vim.api.nvim_set_hl(0, "MiniCursorword", {
+--       underline = true,
+--       bg = "NONE",
+--     })
+--     vim.api.nvim_set_hl(0, "MiniCursorwordCurrent", {
+--       underline = true,
+--       bg = "NONE",
+--     })
+--   end,
+-- })
+--

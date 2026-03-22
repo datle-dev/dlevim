@@ -24,8 +24,8 @@ vim.api.nvim_create_autocmd("ColorScheme", {
   callback = function()
     vim.api.nvim_set_hl(0, "FlashBackdrop", { link = "Comment" })
     vim.api.nvim_set_hl(0, "FlashLabel", {
-      fg = "#000000",
-      bg = "#ffcc00",
+      fg = "#1d2623",
+      bg = "#ffd780",
       bold = true,
     })
   end,

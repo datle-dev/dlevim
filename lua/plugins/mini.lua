@@ -1,12 +1,14 @@
 vim.pack.add({
   "https://github.com/echasnovski/mini.ai",
   "https://github.com/echasnovski/mini.clue",
+  "https://github.com/echasnovski/mini.colors",
   "https://github.com/echasnovski/mini.comment",
   "https://github.com/echasnovski/mini.completion",
   "https://github.com/echasnovski/mini.cursorword",
   "https://github.com/echasnovski/mini.diff",
   "https://github.com/echasnovski/mini.extra",
   "https://github.com/echasnovski/mini.files",
+  "https://github.com/echasnovski/mini.hues",
   "https://github.com/echasnovski/mini.icons",
   "https://github.com/echasnovski/mini.pairs",
   "https://github.com/echasnovski/mini.pick",
@@ -48,6 +50,7 @@ require("mini.clue").setup({
     delay = 0,
   },
 })
+require("mini.colors").setup()
 require("mini.comment").setup()
 require("mini.completion").setup({
   window = {

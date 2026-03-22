@@ -69,6 +69,18 @@ map.n("<leader>sl", function()
   require("snacks").lazygit()
 end, "snacks lazygit")
 
+-- for snacks terminal, identical function called in normal and terminal modes
+local function toggle_terminal()
+  require("snacks").terminal.toggle("bash", {
+    win = {
+      relative = "editor",
+      border = "single",
+    },
+  })
+end
+map.n("<C-t>", toggle_terminal)
+map.t("<C-t>", toggle_terminal)
+
 -- trouble
 map.n("<leader>tb", "<cmd>Trouble diagnostics toggle filter.buf=0<CR>", "trouble buffer")
 map.n("<leader>tl", "<cmd>Trouble diagnostics loclist toggle<CR>", "trouble loclist")

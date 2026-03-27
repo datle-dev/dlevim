@@ -19,6 +19,7 @@ require("nvim-treesitter").install({
   "luadoc",
   "markdown",
   "markdown_inline",
+  "odin",
   "python",
   "query",
   "regex",

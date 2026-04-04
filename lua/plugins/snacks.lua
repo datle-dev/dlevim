@@ -7,7 +7,8 @@ require("snacks").setup({
       enabled = false,
     },
   },
-  scratch = { enabled = true },
+  -- scratch = { enabled = true },
   lazygit = { enabled = true },
-  terminal = { enabled = true },
+  -- terminal = { enabled = true },
 })
+

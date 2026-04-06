@@ -10,6 +10,8 @@ map.t("<A-j>", "<C-\\><C-n><C-w>j", "go to down window")
 map.t("<A-k>", "<C-\\><C-n><C-w>k", "go to up window")
 map.t("<A-l>", "<C-\\><C-n><C-w>l", "go to right window")
 
+map.t("<Esc><Esc>", "<C-\\><C-n>")
+
 -- -- clear search highlight (last search remains on search register)
 -- map.n("<leader>/", ":noh<CR>", "clear search highlight")
 

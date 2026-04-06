@@ -1,14 +1,14 @@
 local map = require("utility.keymaps")
 
--- -- base
--- map.n("<A-h>", "<C-w>h", "go to left window")
--- map.n("<A-j>", "<C-w>j", "go to down window")
--- map.n("<A-k>", "<C-w>k", "go to up window")
--- map.n("<A-l>", "<C-w>l", "go to right window")
--- map.t("<A-h>", "<C-\\><C-n><C-w>h", "go to left window")
--- map.t("<A-j>", "<C-\\><C-n><C-w>j", "go to down window")
--- map.t("<A-k>", "<C-\\><C-n><C-w>k", "go to up window")
--- map.t("<A-l>", "<C-\\><C-n><C-w>l", "go to right window")
+-- base
+map.n("<A-h>", "<C-w>h", "go to left window")
+map.n("<A-j>", "<C-w>j", "go to down window")
+map.n("<A-k>", "<C-w>k", "go to up window")
+map.n("<A-l>", "<C-w>l", "go to right window")
+map.t("<A-h>", "<C-\\><C-n><C-w>h", "go to left window")
+map.t("<A-j>", "<C-\\><C-n><C-w>j", "go to down window")
+map.t("<A-k>", "<C-\\><C-n><C-w>k", "go to up window")
+map.t("<A-l>", "<C-\\><C-n><C-w>l", "go to right window")
 
 -- -- clear search highlight (last search remains on search register)
 -- map.n("<leader>/", ":noh<CR>", "clear search highlight")

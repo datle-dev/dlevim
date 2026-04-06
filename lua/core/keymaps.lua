@@ -57,11 +57,11 @@ map.n("<leader>e", function()
 	require("mini.files").open(vim.api.nvim_buf_get_name(0), true)
 end, "explorer")
 
--- -- mini.pick
--- map.n("<leader>pb", "<cmd>Pick buffers<CR>", "pick buffers")
--- map.n("<leader>pf", "<cmd>Pick files<CR>", "pick files")
--- map.n("<leader>pg", "<cmd>Pick grep<CR>", "pick grep")
--- map.n("<leader>ph", "<cmd>Pick help<CR>", "pick help")
+-- mini.pick
+map.n("<leader>pb", "<cmd>Pick buffers<CR>", "pick buffers")
+map.n("<leader>pf", "<cmd>Pick files<CR>", "pick files")
+map.n("<leader>pg", "<cmd>Pick grep<CR>", "pick grep")
+map.n("<leader>ph", "<cmd>Pick help<CR>", "pick help")
 
 -- snacks
 -- map.n("<leader>st", function()

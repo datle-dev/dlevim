@@ -4,10 +4,13 @@ vim.pack.add({
 	"https://github.com/echasnovski/mini.completion",
 	"https://github.com/echasnovski/mini.files",
 	"https://github.com/echasnovski/mini.icons",
+	"https://github.com/echasnovski/mini.pairs",
+	"https://github.com/echasnovski/mini.pick",
+	"https://github.com/echasnovski/mini.statusline",
+	"https://github.com/echasnovski/mini.surround",
 })
 
 require("mini.ai").setup()
-require("mini.completion").setup()
 require("mini.clue").setup({
 	clues = {
 		{ mode = "n", keys = "<leader>f", desc = "+fzf-lua" },
@@ -41,5 +44,10 @@ require("mini.clue").setup({
 		delay = 0,
 	},
 })
+require("mini.completion").setup()
 require("mini.files").setup()
+require("mini.pairs").setup()
+require("mini.pick").setup()
 require("mini.icons").setup()
+require("mini.statusline").setup()
+require("mini.surround").setup()

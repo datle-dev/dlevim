@@ -14,4 +14,4 @@ Examples
 ```
 
 `:restart`
-`:so[urce] {file}
+`:so[urce] {file}`

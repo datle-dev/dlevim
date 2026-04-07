@@ -1,6 +1,7 @@
-vim.pack.add({ "https://github.com/folke/todo-comments.nvim" })
-
-require("todo-comments").setup()
+return {
+	"https://github.com/folke/todo-comments.nvim",
+	opts = {},
+}
 
 --FIX: fix
 --TODO: todo

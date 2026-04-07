@@ -1,6 +1,5 @@
 local o = vim.opt
 
-o.autocomplete = true
 o.breakindent = true
 o.clipboard = "unnamed"
 o.completeopt = { "menuone", "noselect", "noinsert" }
@@ -12,8 +11,6 @@ o.incsearch = true
 o.linebreak = true
 o.list = true
 o.number = true
-o.pumborder = "single"
-o.pumheight = 20
 o.relativenumber = true
 o.scrolloff = 8
 o.shiftwidth = 4

@@ -1,5 +1,8 @@
-vim.pack.add({
+return {
 	"https://github.com/sainnhe/gruvbox-material",
-})
-
-vim.cmd("colorscheme gruvbox-material")
+	lazy = false,
+	priority = 1000,
+	config = function()
+		vim.cmd([[colorscheme gruvbox-material]])
+	end,
+}

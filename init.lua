@@ -1,19 +1,20 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
+require("core.lazy")
+
 require("core.autocmd")
 require("core.keymaps")
 require("core.options")
-require("core.treesitter")
 
-require("plugins.colorscheme")
-require("plugins.conform")
-require("plugins.flash")
-require("plugins.fzf_lua")
-require("plugins.mason")
-require("plugins.mini")
-require("plugins.snacks")
-require("plugins.todo_comments")
+-- require("plugins.colorscheme")
+-- require("plugins.conform")
+-- require("plugins.flash")
+-- require("plugins.fzf_lua")
+-- require("plugins.mason")
+-- require("plugins.mini")
+-- require("plugins.snacks")
+-- require("plugins.todo_comments")
 
 vim.lsp.enable({
 	"basedpyright",

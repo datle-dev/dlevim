@@ -4,7 +4,6 @@ vim.g.maplocalleader = "\\"
 require("core.autocmd")
 require("core.keymaps")
 require("core.options")
-require("core.treesitter")
 
 require("plugins.colorscheme")
 require("plugins.conform")

@@ -16,9 +16,9 @@ require("plugins.snacks")
 require("plugins.todo_comments")
 
 vim.lsp.enable({
-	"basedpyright",
 	"lua_ls",
 	"marksman",
 	"ols",
 	"rust_analyzer",
+	"ty",
 })

@@ -23,4 +23,5 @@ vim.lsp.enable({
 	"marksman",
 	"ols",
 	"rust_analyzer",
+	"ty",
 })

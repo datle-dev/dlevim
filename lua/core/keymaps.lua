@@ -12,21 +12,13 @@ map.t("<A-l>", "<C-\\><C-n><C-w>l", "go to right window")
 
 map.t("<Esc><Esc>", "<C-\\><C-n>")
 
--- -- clear search highlight (last search remains on search register)
--- map.n("<leader>/", ":noh<CR>", "clear search highlight")
+-- clear search highlight (last search remains on search register)
+map.n("<leader>/", ":noh<CR>", "clear search highlight")
 
 -- conform
 map.n("<leader>k", function()
 	require("conform").format({ async = true })
 end, "format buffer")
-
--- flash
-map.n("<leader>lj", function()
-  require("flash").jump()
-end, "flash jump")
-map.n("<leader>lt", function()
-  require("flash").treesitter()
-end, "flash treesitter")
 
 -- fzf-lua
 map.n("<leader>fb", "<cmd>FzfLua files<CR>", "fzf-lua files")
@@ -34,23 +26,9 @@ map.n("<leader>ff", "<cmd>FzfLua builtin<CR>", "fzf-lua builtin")
 map.n("<leader>fg", "<cmd>FzfLua grep<CR>", "fzf-lua grep")
 map.n("<leader>fl", "<cmd>FzfLua live_grep<CR>", "fzf-lua live grep")
 
--- -- grapple
--- map.n("<leader>gm", function()
---   vim.cmd("Grapple toggle")
---   vim.notify("Marked with Grapple")
--- end, "grapple mark")
--- map.n("<leader>gn", function()
---   vim.cmd("Grapple cycle_tags next")
---   vim.notify("Grapple cycle next")
--- end, "grapple next")
--- map.n("<leader>go", function()
---   vim.cmd("Grapple toggle_tags")
---   vim.notify("Opened Grapple UI")
--- end, "grapple open")
--- map.n("<leader>gp", function()
---   vim.cmd("Grapple cycle_tags prev")
---   vim.notify("Grapple cycle previous")
--- end, "grapple previous")
+-- leap
+map.n("<leader>ll", "<Plug>(leap)", "leap")
+map.n("<leader>lv", "<Plug>(leap-visit)", "leap")
 
 -- mini.files
 map.n("<leader>e", function()

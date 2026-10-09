@@ -2,11 +2,12 @@ local o = vim.opt
 
 o.autocomplete = true
 o.breakindent = true
-o.clipboard = "unnamed"
+o.clipboard = "unnamedplus"
 o.completeopt = { "menuone", "noselect", "noinsert" }
 o.cursorline = true
 o.expandtab = true
 o.fillchars = { eob = " " }
+o.foldcolumn = "1"
 o.ignorecase = true
 o.incsearch = true
 o.linebreak = true

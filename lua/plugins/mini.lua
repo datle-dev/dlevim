@@ -14,11 +14,9 @@ require("mini.ai").setup()
 require("mini.clue").setup({
 	clues = {
 		{ mode = "n", keys = "<leader>f", desc = "+fzf-lua" },
-		-- { mode = "n", keys = "<leader>g", desc = "+grapple" },
-		{ mode = "n", keys = "<leader>l", desc = "+flash" },
-		-- { mode = "n", keys = "<leader>p", desc = "+pick" },
+		{ mode = "n", keys = "<leader>l", desc = "+leap" },
+		{ mode = "n", keys = "<leader>p", desc = "+pick" },
 		{ mode = "n", keys = "<leader>s", desc = "+snacks" },
-		-- { mode = "n", keys = "<leader>t", desc = "+trouble" },
 		require("mini.clue").gen_clues.square_brackets(),
 		require("mini.clue").gen_clues.builtin_completion(),
 		require("mini.clue").gen_clues.g(),

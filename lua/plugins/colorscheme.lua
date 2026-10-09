@@ -1,5 +1,5 @@
 vim.pack.add({
-	"https://github.com/sainnhe/gruvbox-material",
+    "https://github.com/edeneast/nightfox.nvim",
 })
 
-vim.cmd("colorscheme gruvbox-material")
+vim.cmd("colorscheme terafox")

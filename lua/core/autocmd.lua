@@ -1,6 +1,14 @@
 vim.api.nvim_create_autocmd("TextYankPost", {
 	callback = function()
-		(vim.hl or vim.highlight).on_yank()
+		vim.hl.hl_op()
+        if vim.v.event.regname == "+" or vim.v.event.regname == "" then
+            local copy_plus = require("vim.ui.clipboard.osc52").copy("+")
+            copy_plus(vim.v.event.regcontents)
+        end
+        if vim.v.event.regname == "*" then
+            local copy_star= require("vim.ui.clipboard.osc52").copy("*")
+            copy_star(vim.v.event.regcontents)
+        end
 	end,
 })
 

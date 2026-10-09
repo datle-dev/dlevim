@@ -8,6 +8,8 @@ o.cursorline = true
 o.expandtab = true
 o.fillchars = { eob = " " }
 o.foldcolumn = "1"
+o.foldlevel = 99
+o.foldlevelstart = 99
 o.ignorecase = true
 o.incsearch = true
 o.linebreak = true

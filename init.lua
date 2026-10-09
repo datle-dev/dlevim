@@ -17,11 +17,3 @@ require("plugins.mini")
 require("plugins.snacks")
 require("plugins.todo_comments")
 require("plugins.treesitter")
-
-vim.lsp.enable({
-	"lua_ls",
-	"marksman",
-	"ols",
-	"rust_analyzer",
-	"ty",
-})
